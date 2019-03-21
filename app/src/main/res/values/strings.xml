@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CaffeeApp</string>
+    <string name="caffee_app">Caffee App</string>
+    <string name="e_mail">e-mail</string>
+    <string name="sifre">sifre</string>
+    <string name="g_r" translatable="false">Giriş</string>
+    <string name="kayit_ol">Kayıt Ol</string>
+    <string name="ger">GERİ</string>
+    <string name="ad">AD</string>
+    <string name="sicak_view">Sıcak İçecekler</string>
+    <string name="yemek_view">Atıştırmalıklar</string>
+    <string name="tatli_view">Tatlılar</string>
+    <string name="saguk_view">Soğuk İçecekler</string>
+
+
+</resources>

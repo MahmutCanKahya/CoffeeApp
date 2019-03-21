@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:background="@drawable/corner"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/ad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geri"
+        tools:targetApi="o"
+        android:paddingStart="3dp"/>
+
+    <EditText
+        android:id="@+id/userMail"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/corner"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:targetApi="o"
+        android:paddingStart="3dp"/>
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/corner"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/sifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/userMail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userMail"
+        app:layout_constraintTop_toBottomOf="@+id/userMail"
+        tools:targetApi="o"
+        android:paddingStart="3dp"/>
+
+    <Button
+        android:id="@+id/btnSingup"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/corner"
+        android:onClick="singup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userPassword"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintVertical_bias="0.147"
+        tools:text="@string/kayit_ol"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/geri"
+        android:layout_width="63dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/corner"
+        android:onClick="geri"
+        android:text="@string/ger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="17sp"/>
+
+</android.support.constraint.ConstraintLayout>

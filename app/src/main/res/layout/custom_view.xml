@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostClass"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/menu_urun_adi"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/mainColor"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu_resmi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_resmi"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+    <TextView
+        android:id="@+id/menu_urun_aciklama"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/menu_urun_adi"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/menu_urun_adi"
+        app:layout_constraintTop_toBottomOf="@+id/menu_urun_adi"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/menu_urun_fiyat"
+        android:layout_width="57dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_resmi"
+        app:layout_constraintStart_toStartOf="@+id/menu_urun_aciklama"
+        app:layout_constraintTop_toBottomOf="@+id/menu_urun_aciklama"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="18dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="₺"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/menu_urun_fiyat"
+        app:layout_constraintTop_toBottomOf="@+id/menu_urun_aciklama" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black">
+
+    <Button
+        android:id="@+id/decrease_buy"
+        android:layout_width="20dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="6dp"
+        android:background="@color/grey"
+        android:onClick="decrease"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+
+    <ImageView
+        android:id="@+id/urun_resim_buy"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/taslak" />
+
+    <TextView
+        android:id="@+id/urun_adi_buy"
+        android:layout_width="230dp"
+        android:layout_height="23dp"
+        android:text="TextView"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/urun_resim_buy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/urun_resim_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_resim_buy" />
+
+    <TextView
+        android:id="@+id/urun_aciklama_buy"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/urun_adi_buy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/urun_adi_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_adi_buy" />
+
+    <TextView
+        android:id="@+id/urun_fiyat_buy"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="200,00"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/urun_aciklama_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="15dp"
+        android:layout_height="27dp"
+        android:background="@color/grey"
+        android:text="₺"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/urun_fiyat_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+
+    <Button
+        android:id="@+id/sepete_ekle"
+        android:layout_width="86dp"
+        android:layout_height="27dp"
+        android:background="#FED061"
+        android:onClick="addToBasket"
+        android:text="Sepete Ekle"
+        android:textSize="10sp"
+        android:textColor="#666666"
+        app:layout_constraintEnd_toEndOf="@+id/urun_aciklama_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+
+    <Button
+        android:id="@+id/increase_buy"
+        android:layout_width="20dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/grey"
+        android:onClick="increase"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/sepete_ekle"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+
+    <EditText
+        android:id="@+id/piece"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:cursorVisible="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/increase_buy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/decrease_buy"
+        app:layout_constraintTop_toBottomOf="@+id/urun_aciklama_buy" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "782020415759",
+    "firebase_url": "https://caffeeapp-3f12f.firebaseio.com",
+    "project_id": "caffeeapp-3f12f",
+    "storage_bucket": "caffeeapp-3f12f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782020415759:android:2a389062177571ae",
+        "android_client_info": {
+          "package_name": "mahmutcankahya.com.caffeeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782020415759-a08fsq5t96ri8eaab4obks5b3os88l3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mahmutcankahya.com.caffeeapp",
+            "certificate_hash": "ea4febef817f63f2da23084dbebf58c03dc110d6"
+          }
+        },
+        {
+          "client_id": "782020415759-dlvbr7a8vi3s5j5t2gr8f0ebgvj6lesq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACOM_X48XZN_r9Usz_uPUr9hucYOKSztQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782020415759-dlvbr7a8vi3s5j5t2gr8f0ebgvj6lesq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "782020415759-fklas95ecs8fs0dk8rls958qi1guku4j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Arcom.Caffee"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

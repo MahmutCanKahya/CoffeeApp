@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="2dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toEndOf="@+id/urun_adet_b"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/mainColor" />
+
+    <TextView
+        android:id="@+id/urun_isim_b"
+        android:layout_width="157dp"
+        android:layout_height="27dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="İsim"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/urun_adet_b"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="Adet"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/urun_fiyat_b"
+        android:layout_width="96dp"
+        android:layout_height="27dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="Fiyat"
+        android:textColor="@color/mainColor"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="15dp"
+        android:layout_height="27dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="₺"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/urun_fiyat_b"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="2dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toEndOf="@+id/urun_isim_b"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/mainColor" />
+</android.support.constraint.ConstraintLayout>

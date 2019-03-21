@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sicak"
+        android:enabled="true"
+        android:icon="@drawable/sicak_icon"
+        android:title="@string/sicak_view"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_yemek"
+        android:enabled="true"
+        android:icon="@drawable/yemek_icon"
+        android:title="@string/yemek_view"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_tatli"
+        android:enabled="true"
+        android:icon="@drawable/tatli_icon"
+        android:title="@string/tatli_view"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_soguk"
+        android:enabled="true"
+        android:icon="@drawable/soguk_icon"
+        android:title="@string/saguk_view"
+        app:showAsAction="ifRoom" />
+</menu>

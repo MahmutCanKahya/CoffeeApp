@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/userMail"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/corner"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:targetApi="o">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/corner"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="@string/sifre"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="3dp"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toEndOf="@+id/userMail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userMail"
+        app:layout_constraintTop_toBottomOf="@+id/userMail"
+        tools:targetApi="o" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/caffee_app"
+        android:textAlignment="center"
+        android:textColor="#FED061"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/btnSingin"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/corner"
+        android:onClick="giris"
+        android:text="@string/g_r"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnSingup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <Button
+        android:id="@+id/btnSingup"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/corner"
+        android:onClick="kayit_ol"
+        android:text="@string/kayit_ol"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        tools:text="Kayit Ol" />
+
+</android.support.constraint.ConstraintLayout>
